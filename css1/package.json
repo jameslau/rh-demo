@@ -2,8 +2,10 @@
   "name": "rh-css1",
   "version": "1.0.0",
   "dependencies": {
+    "bootstrap": "^4.1.1",
     "browserify": "~2.36.1",
-    "less": "~1.5.1"
+    "less": "^1.5.1",
+    "less-watch-compiler": "^1.11.3"
   },
   "scripts": {}
 }
