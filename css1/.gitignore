@@ -1,2 +1,4 @@
-# ignoring node_modules
+# ignoring these files
+/.DS_Store
 /node_modules
+/package-lock.json
