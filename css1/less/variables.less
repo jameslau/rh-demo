@@ -1,15 +1,36 @@
 
+// consolidated variables for project
+// generally, all variable sections should be in their own less file
+// but for the sake of this exercise and size, they are kept in one file.
+
 // variables: colors
-@rh-red:       #cc0000; // rh red
-@rh-dark-red:  #6f0000; // rh dark red
-@rh-grey: 	   #bbbbbb; // rh grey
-@rh-white: 	   #ffffff; // rh white
+@rh-red:    	   #cc0000; // rh red
+@rh-dark-red:  	   #6f0000; // rh dark red
+@rh-deep-dar-red:  #4c0000; // rh deep dark red
+@rh-grey: 	       #bbbbbb; // rh grey
+@rh-white: 	       #ffffff; // rh white
 
 // variables: typography
-@rh-font:  			Arial, Helvetica, sans-serif;
+@rh-font:  			'Open Sans', sans-serif;
 @rh-font-size: 	 	1em;
 
 p, span {
 	color: @rh-white;
 	font-family: @rh-font;
+}
+
+// mixin for border and color
+.borders() {
+	border-left: 1px solid @rh-grey;
+  	border-right: 1px solid @rh-grey;
+  	border-bottom: 1px solid @rh-grey;
+}
+.box-shadow() {
+	box-shadow: 0px 0px 6px 1px rgba(0, 0, 0, 0.2);
+}
+.box-shadow-inset() {
+	box-shadow: inset 0px 0px 2px 1px #4c0000;
+}
+.box-shadow-inset-down() {
+	box-shadow: inset 0px 11px 8px -10px #bbbbbb;
 }
