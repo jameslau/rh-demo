@@ -1,0 +1,20 @@
+// variable: structure
+
+body {
+	position: relative;
+	.rh-container { // main openshift container
+		position: relative;
+		@media (max-width: @screen-sm-min) { // hiding container on small devices (<768px).
+		    display: none;
+	  	}
+		.rh-header-bar { // red openshift header bar
+			background-color: @rh-red;
+		}
+		.rh-content-body {
+			background-color: @rh-white;
+			border-left: 1px solid @rh-grey;
+			border-right: 1px solid @rh-grey;
+			border-bottom: 1px solid @rh-grey;
+		}
+	}
+}
