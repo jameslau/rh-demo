@@ -9,7 +9,7 @@ npm install
 
 ### Running Environment
 cd rh-demo/css1
-npm run watch (or less-watch-compiler)
+compile less file with less-watch
 
 ### View project
 open css1/index.html in your browser

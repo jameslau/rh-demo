@@ -3,50 +3,41 @@
 body {
 	position: relative;
 	.rh-box { // main openshift box
-		position: relative;
 		top: 200px;
-		.box-shadow();
-		.rh-header-bar { // red openshift header bar
-			height: 48px;
-			background-color: @rh-red;
-			p {
-				position: relative;
-				float: left;
-				padding-top: 14px;
-			}
-			span.rh-numbox { // top right corner number box
-				width: 26px;
-				height: 21px;
-				position: relative;
-				top: 14px;
-				right: 2px;
-				float: right;
-				display: block;
-				background-color: @rh-dark-red;
-				.box-shadow-inset();
-				text-align: center;
+		position: relative;
+		margin: 0 auto;
+		.row {
+			.rh-header-bar { // red openshift header bar
+				height: 48px;
+				background-color: @rh-red;
+				.box-shadow();
+				p {
+					position: relative;
+					float: left;
+					padding-top: 14px;
+				}
+				span.rh-numbox { // top right corner number box
+					width: 26px;
+					height: 21px;
+					position: relative;
+					top: 14px;
+					right: 2px;
+					float: right;
+					display: block;
+					background-color: @rh-dark-red;
+					.box-shadow-inset();
+					text-align: center;
+				}
 			}
 		}
-		.rh-content-body { // white openshift content body
-			height: 109px;
-			display: flex;
-			background-color: @rh-white;
-			.borders();
-			.box-shadow-inset-down();
-			// .cols.orange, .cols.green {
-			// 	@media (min-width: 992px) {
-			// 		display: block;
-			// 	}
-			// 	@media (min-width: 1200px) { 
-			// 	    display: block;
-			//   	}
-
-			// }
-			.orange {
-				background-color: orange;
-			}
-			.green {
-				background-color: green;
+		.row {
+			.rh-content-body { // white openshift content body
+				height: 109px;
+				display: flex;
+				background-color: @rh-white;
+				.borders();
+				.box-shadow-inset-down();
+				.box-shadow();
 			}
 		}
 	}
