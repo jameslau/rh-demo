@@ -1,16 +1,23 @@
 
-// variable: structure
+// structure styling
 body {
 	position: relative;
+	background-image: radial-gradient(circle, @rh-grey 10%, @rh-bg-grey 10%);
+	background-position: 0 1em;
+	background-origin: padding-box;
+	background-clip: border-box;
+	background-size: 2em 2em;
 	.rh-box { // main openshift box
 		top: 200px;
 		position: relative;
 		margin: 0 auto;
+		@media only screen and (min-device-width : 320px) and (max-device-width : 480px) { // hide box on small devices
+			display: none;
+		}
 		.row {
 			.rh-header-bar { // red openshift header bar
 				height: 48px;
 				background-color: @rh-red;
-				.box-shadow();
 				p {
 					position: relative;
 					float: left;

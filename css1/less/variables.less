@@ -12,7 +12,7 @@
 @rh-white: 	       #ffffff; // rh white
 
 // variables: typography
-@rh-font:  			'Open Sans', sans-serif;
+@rh-font:  			'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif; // opensans from google fonts. helvetivca fallback.
 @rh-font-size: 	 	1em;
 
 p, span {
@@ -21,26 +21,17 @@ p, span {
 }
 
 // mixin for border and color
-.borders() {
+.borders {
 	border-left: 1px solid @rh-grey;
   	border-right: 1px solid @rh-grey;
   	border-bottom: 1px solid @rh-grey;
 }
-.box-shadow() {
+.box-shadow {
 	box-shadow: 0px 0px 6px 1px rgba(0, 0, 0, 0.2);
 }
-.box-shadow-inset() {
+.box-shadow-inset {
 	box-shadow: inset 0px 0px 2px 1px @rh-deep-dar-red;
 }
-.box-shadow-inset-down() {
+.box-shadow-inset-down {
 	box-shadow: inset 0px 11px 8px -10px @rh-grey;
-}
-
-// background design
-body {
-	background-image: radial-gradient(circle, @rh-grey 10%, @rh-bg-grey 10%);
-	background-position: 0 1em;
-	background-origin: padding-box;
-	background-clip: border-box;
-	background-size: 2em 2em;
 }
