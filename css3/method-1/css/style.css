@@ -1,0 +1,29 @@
+
+/* RH-DEMO: CSS3/METHOD 1 STYLING */
+
+/* ------------------------- */
+/* PROJECT STYLES */
+body {
+  padding: 30px;
+}
+header {
+  background: lightblue;
+}
+section {
+  background: lightgreen;
+  width: 75%;
+  float: left;
+}
+article {
+  border: 20px solid lightgreen;
+  background: white;
+  margin: 0 0 1rem 0;
+}
+aside {
+  background: pink;
+  width: 25%;
+  float: right;
+}
+header, .module {
+  padding: 1rem;
+}

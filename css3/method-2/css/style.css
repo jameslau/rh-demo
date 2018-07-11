@@ -1,0 +1,40 @@
+
+/* RH-DEMO: CSS3/METHOD 2 STYLING */
+
+/* ------------------------- */
+/* PROJECT STYLES */
+body {
+  position: relative;
+  padding: 1.875rem;
+}
+header {
+  background: lightblue;
+}
+section.container {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: auto;
+}
+section {
+  background: lightgreen;
+  width: 75%;
+  position: absolute;
+  left: 0px;
+}
+aside {
+  background: pink;
+  width: 25%;
+  position: absolute;
+  right: 0px;
+}
+article {
+  background: white;
+  margin: 0 0 1rem 0;
+  padding-left: 0px;
+  padding-right: 0px;
+  border: 16px solid lightgreen;
+}
+header, article {
+  padding: 1rem;
+}
