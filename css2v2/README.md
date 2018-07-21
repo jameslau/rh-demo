@@ -2,7 +2,7 @@
 
 This is the second exercise out of three CSS exercises. You will need the following files and folders in order to view the project. Please pull down the code from the main RH-DEMO page for the complete project library.
 
-UPDATE: I've been asked to revise the structure of the markup and utilize a flexbox method for the CSS. All otherfiles and major folder structures stay the same.
+UPDATE: Revised markup structure and utilized a flexbox method for the CSS. All other files and major folder structures stay the same.
 
 ```
 index.html

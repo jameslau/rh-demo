@@ -8,11 +8,14 @@ body {
 	background: rgb(255,255,255);
 	background: radial-gradient(circle, rgba(255,255,255,1) 0%, rgba(187,187,187,1) 100%);
 }
-h1, h2, h3, h4, h5, h6, a, p, ul, li {
+h1, h2, h3, h4, h5, h6, a, p, ul, li, dt, dd {
 	font-family: "overpass", Arial, Helvetica, sans-serif;
 }
 p {
 	font-weight: 400;
+}
+dd {
+	color: #bbbbbb;
 }
 span.ico-stat {
 	width: 59px;
@@ -58,16 +61,11 @@ span.ico-stat {
 .rh-pan-nav p {
 	color: #FFFFFF;
 	display: block;
-	/*margin-bottom: 0px;
-	margin-top: 0px;*/
-	/*padding: 17px 17px 20px 17px;*/
 	position: absolute;
 	left: 17px;
 }
 .rh-pan-nav ul {
 	display: block;
-	/*margin-bottom: 0px;
-	margin-top: 0px;*/
 	position: absolute;
 	right: 0;
 }
@@ -100,17 +98,14 @@ span.ico-stat {
 }
 
 /* ------------------------- */
-/* PANEL BODY */
+/* RH-PANEL BODY */
 .rh-pan-body {
-	width: 100%;
+	width: auto;
 	position: relative;
+	padding-left: 16px;
+	padding-right: 16px;
+	padding-top: 16px;
 	padding-bottom: 40px;
-}
-.rh-pan-descrip {
-	max-width: 551px;
-	height: auto;
-	padding: 16px 16px 0px 16px;
-	position: relative;
 }
 .panel-descrip h3 {
 	color: #000000;
