@@ -1,0 +1,191 @@
+
+/* RH-DEMO: CSS2 STYLING */
+
+/* ------------------------- */
+/* GENERAL STYLES */
+
+body {
+	background: rgb(255,255,255);
+	background: radial-gradient(circle, rgba(255,255,255,1) 0%, rgba(187,187,187,1) 100%);
+}
+
+h1, h2, h3, h4, h5, h6, a, p {
+	font-family: "overpass", Arial, Helvetica, sans-serif;
+	/*margin-bottom: 0px;
+	margin-top: 0px;*/
+}
+ul, li {
+	font-family: "overpass", Arial, Helvetica, sans-serif;
+}
+p {
+	font-weight: 400;
+}
+span.ico-stat {
+	width: 59px;
+	height: 25px;
+	padding: 5px 8px;
+	position: relative;
+	color: #FFFFFF;
+	background: #008100;
+	border-radius: 2px;
+}
+@media (max-width: 600px), screen and (orientation: portrait) { 
+	span.ico-stat {
+		top: 8px;
+		padding: 9px 8px 5px 8px;
+	}
+}
+
+/* ------------------------- */
+/* RH-PANEL SECTION */
+.rh-panel {
+	max-width: 551px;
+	height: auto;
+	clear: both;
+	padding: 0px;
+	margin: 0 auto;
+	position: relative;
+	top: 136px;
+	background: #FFFFFF;
+	border: 1px solid #FFFFFF;
+	box-shadow: 0px 0px 6px 1px rgba(0, 0, 0, 0.2);
+}
+
+/* ------------------------- */
+/* PANEL HEADER */
+.panel-header {
+	width: 100%;
+	height: 43px;
+	display: block;
+	position: relative;
+	background: linear-gradient(180deg, rgba(204,0,0,1) 30%, rgba(71,0,0,1) 130%);
+}
+.panel-header p {
+	color: #FFFFFF;
+	display: block;
+	/*margin-bottom: 0px;
+	margin-top: 0px;*/
+	/*padding: 17px 17px 20px 17px;*/
+	position: absolute;
+	left: 17px;
+}
+.panel-header ul {
+	display: block;
+	/*margin-bottom: 0px;
+	margin-top: 0px;*/
+	position: absolute;
+	right: 0;
+}
+.panel-header ul li {
+	color: #FFFFFF;	
+	display: inline;
+	border-left: 1px solid #FFFFFF;
+	padding: 17px 17px 20px 17px;
+}
+.panel-header ul li:hover {
+	background: rgb(204,0,0);
+	background: radial-gradient(circle, rgba(204,0,0,1) 0%, rgba(71,0,0,1) 100%);
+	padding: 18px 17px 8px 17px;
+}
+.panel-header ul li#active-list-item {
+	background: rgb(204,0,0);
+	background: radial-gradient(circle, rgba(204,0,0,1) 0%, rgba(71,0,0,1) 100%);
+	padding: 18px 17px 8px 17px;
+}
+.panel-header ul li:last-child {
+	border-right: 1px solid #FFFFFF;
+}
+.panel-header ul li a {
+	color: #FFFFFF;
+	font-weight: 400;
+	text-decoration: none;
+}
+.panel-header ul li a:hover {
+	color: #FFFFFF;
+}
+.panel-header ul li a:visited {
+	color: #FFFFFF;
+}
+
+/* ------------------------- */
+/* PANEL BODY */
+.panel-body {
+	width: 100%;
+	position: relative;
+	padding-bottom: 40px;
+}
+.panel-body .panel-descrip {
+	max-width: 551px;
+	height: auto;
+	padding: 16px 16px 0px 16px;
+	position: relative;
+}
+.panel-descrip h3 {
+	color: #000000;
+	font-size: 1.6rem;
+	margin-top: 0px;
+	margin-bottom: 0px;
+}
+.panel-descrip p {
+	margin-bottom: 43px;
+}
+article.panel-stats {
+	max-width: 551px;
+	height: auto;
+	/*padding: 0px 16px 0px 16px;*/
+	position: relative;
+	/*background: tan;*/ /*add back colors in to see element placement */
+}
+ul.panel-stats-list {
+	list-style-type: none;
+	margin-bottom: 0px;
+	margin-top: 0px;
+	padding: 0px;
+}
+ul.panel-stats-list > li:last-child > div ul { /* target the last child of the ul list witin the parent ul list */
+	margin-bottom: 0px;
+}
+ul.panel-stats-container-list {
+	width: 100%;
+	list-style-type: none;
+	margin-bottom: 27px;
+	padding: 0px 16px;
+}
+ul.panel-stats-container-list li.panel-stats-container-list-item {
+	display: inline;
+}
+@media (max-width: 600px), screen and (orientation: portrait) {
+	ul.panel-stats-container-list li.panel-stats-container-list-item {
+		display: block;	
+	}
+}
+ul.panel-stats-container-list li.panel-stats-container-list-item:first-child { /* target the first child of the inner stat list element */
+	width: 150px;
+	display: inline-table;
+	padding-right: 0px;
+	/*background: blue;*/ /*add back colors in to see element placement */
+	color: ;
+	font-weight: 500;
+}
+ul.panel-stats-container-list li.panel-stats-container-list-item:last-child { /* target the last child of the inner stat list element */
+	color: #bbbbbb;
+	padding-left: 20px;
+	/*background: green;*/ /*add back colors in to see element placement */
+}
+@media (max-width: 600px), screen and (orientation: portrait) {
+	ul.panel-stats-container-list li.panel-stats-container-list-item:last-child {
+		padding-left: 0px;
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
