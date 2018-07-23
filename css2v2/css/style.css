@@ -18,8 +18,15 @@ body {
 h1, h2, h3, h4, h5, h6, a, p, ul, li, dt, dd {
 	font-family: "overpass", Arial, Helvetica, sans-serif;
 }
+#logo, a {
+	color: #FFFFFF;
+}
 p {
 	font-weight: 400;
+}
+ul, li {
+	margin: 0px;
+	padding: 0px;
 }
 span.ico-stat {
 	width: 59px;
@@ -51,50 +58,46 @@ span.ico-stat {
 
 /* ------------------------- */
 /* RH-PANEL NAVIGATION */
-.rh-pan-nav {
-	width: 100%;
-	height: 43px;
-	display: block;
-	position: relative;
+nav {
+	padding-left: 16px;
 	background: linear-gradient(180deg, rgba(204,0,0,1) 30%, rgba(71,0,0,1) 130%);
 }
-.rh-pan-nav p {
+ul {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	list-style-type: none;
+}
+ul li {
+	display: flex;
+	flex: 1 1 auto;
+  	align-items: center;
+  	justify-content: center;
 	color: #FFFFFF;
-	display: block;
-	position: absolute;
-	left: 17px;
-}
-.rh-pan-nav ul {
-	display: block;
-	position: absolute;
-	right: 0;
-}
-.rh-pan-nav ul li {
-	color: #FFFFFF;	
-	display: inline;
 	border-left: 1px solid #FFFFFF;
-	padding: 17px 17px 20px 17px;
+	height: 45px;
+	pointer-events: all;
 }
-.rh-pan-nav ul li:hover {
-	background: rgb(204,0,0);
-	background: radial-gradient(circle, rgba(204,0,0,1) 0%, rgba(71,0,0,1) 100%);
-	padding: 18px 17px 8px 17px;
+ul li:first-child {
+	display: flex;
+	align-items: center;
+  	justify-content: flex-start;
+	flex: 20 1 auto;
+	border-left: none;
 }
-.rh-pan-nav ul li#active-list-item {
-	background: rgb(204,0,0);
-	background: radial-gradient(circle, rgba(204,0,0,1) 0%, rgba(71,0,0,1) 100%);
-	padding: 18px 17px 8px 17px;
-}
-.rh-pan-nav ul li a {
-	color: #FFFFFF;
-	font-weight: 400;
+
+ul li a {
+	display: flex;
+    flex-direction: column;
+    flex: 1 0 auto;
+    justify-content: center;
+    padding: 12.4px;
+	text-align: center;
 	text-decoration: none;
 }
-.rh-pan-nav ul li a:hover {
-	color: #FFFFFF;
-}
-.rh-pan-nav ul li a:visited {
-	color: #FFFFFF;
+li#active, li:hover:not(:first-child) {
+	background: rgb(204,0,0);
+	background: radial-gradient(circle, rgba(204,0,0,1) 0%, rgba(71,0,0,1) 100%);
 }
 
 /* ------------------------- */
@@ -126,15 +129,11 @@ dl {
 	flex-wrap: wrap;
 }
 dt {
-	flex-grow: 0.4;
-	flex-shrink: 1;
-	flex-basis: 0%;
+	flex: 0.4 1 0;
 }
 dd {
 	color: #bbbbbb;
-	flex-grow: 1;
-	flex-shrink: 1;
-	flex-basis: 0%;
+	flex: 1 1 0;
 	margin-left: 0px;
 }
 

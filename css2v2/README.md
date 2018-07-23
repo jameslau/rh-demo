@@ -30,9 +30,11 @@ LIST:
 ### Flexbox Guides
 - https://css-tricks.com/snippets/css/a-guide-to-flexbox/
 - https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout/Basic_Concepts_of_Flexbox
+- https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout/Controlling_Ratios_of_Flex_Items_Along_the_Main_Ax
 
 ### Notes:
-- "Within a single dl element, there should not be more than one dt element for each name." (http://html5doctor.com/the-dl-element/)
+- "Within a single dl element, there should not be more than one dt element for each name."  
+(http://html5doctor.com/the-dl-element/)
 - https://stackoverflow.com/questions/19026884/flexbox-center-horizontally-and-vertically
 
 
