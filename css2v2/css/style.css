@@ -15,7 +15,7 @@ body {
 	background: rgb(255,255,255);
 	background: radial-gradient(circle, rgba(255,255,255,1) 0%, rgba(187,187,187,1) 100%);
 }
-h1, h2, h3, h4, h5, h6, a, p, ul, li, dt, dd {
+h1, h2, h3, h4, h5, h6, a, ul, li, p, dt, dd {
 	font-family: "overpass", Arial, Helvetica, sans-serif;
 }
 #logo, a {
@@ -37,15 +37,6 @@ span.ico-stat {
 	background: #008100;
 	border-radius: 2px;
 }
-/*@media (max-width: 600px), screen and (orientation: portrait) { 
-	span.ico-stat {
-		top: 8px;
-		padding: 9px 8px 5px 8px;
-	}
-}*/
-
-/* ------------------------- */
-/* RH BODY SECTION */
 
 /* ------------------------- */
 /* RH-PANEL SECTION */
@@ -75,21 +66,19 @@ ul li {
   	justify-content: center;
 	color: #FFFFFF;
 	border-left: 1px solid #FFFFFF;
-	height: 45px;
-	pointer-events: all;
 }
 ul li:first-child {
 	display: flex;
 	align-items: center;
   	justify-content: flex-start;
-	flex: 20 1 auto;
+	flex: 13 1 auto;
 	border-left: none;
+	height: 45px;
 }
-
 ul li a {
 	display: flex;
+	flex: 1 0 auto;
     flex-direction: column;
-    flex: 1 0 auto;
     justify-content: center;
     padding: 12.4px;
 	text-align: center;
@@ -105,16 +94,12 @@ li#active, li:hover:not(:first-child) {
 .rh-pan-body {
 	width: auto;
 	position: relative;
-	padding-left: 16px;
-	padding-right: 16px;
-	padding-top: 16px;
-	padding-bottom: 40px;
+	padding: 16px 16px 40px 16px;
 }
 .panel-descrip h3 {
 	color: #000000;
 	font-size: 1.6rem;
-	margin-top: 0px;
-	margin-bottom: 0px;
+	margin: 0px auto;
 }
 .panel-descrip p {
 	margin-bottom: 43px;
@@ -137,9 +122,37 @@ dd {
 	margin-left: 0px;
 }
 
-
-
-
+/* ------------------------- */
+/* RH PANEL MEDIA QUERIES */
+@media (max-width: 480px), screen and (orientation: portrait) { 
+	span.ico-stat {
+		top: 8px;
+		padding: 9px 8px 5px 8px;
+	}
+}
+@media screen and (max-width: 480px){ 
+	body {
+		height: auto;
+	}
+	nav {
+		padding-left: 0px;
+	}
+	ul {
+		flex-direction: column;
+	}
+	ul li {
+		border-top: 1px solid #FFFFFF;
+		border-left: none;
+	}
+	ul li:first-child {
+		padding-left: 16px;
+	}
+	dl { 
+		flex-direction: column;
+		min-height: 56px;
+		margin: 0px;
+	}
+}
 
 
 
