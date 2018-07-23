@@ -14,9 +14,6 @@ h1, h2, h3, h4, h5, h6, a, p, ul, li, dt, dd {
 p {
 	font-weight: 400;
 }
-dd {
-	color: #bbbbbb;
-}
 span.ico-stat {
 	width: 59px;
 	height: 25px;
@@ -116,55 +113,27 @@ span.ico-stat {
 .panel-descrip p {
 	margin-bottom: 43px;
 }
-article.rh-pan-list {
-	max-width: 551px;
-	height: auto;
-	/*padding: 0px 16px 0px 16px;*/
-	position: relative;
-	/*background: tan;*/ /*add back colors in to see element placement */
-}
-ul.panel-stats-list {
-	list-style-type: none;
-	margin-bottom: 0px;
-	margin-top: 0px;
-	padding: 0px;
-}
-ul.panel-stats-list > li:last-child > div ul { /* target the last child of the ul list witin the parent ul list */
-	margin-bottom: 0px;
-}
-ul.panel-stats-container-list {
-	width: 100%;
-	list-style-type: none;
-	margin-bottom: 27px;
-	padding: 0px 16px;
-}
-ul.panel-stats-container-list li.panel-stats-container-list-item {
-	display: inline;
-}
-@media (max-width: 600px), screen and (orientation: portrait) {
-	ul.panel-stats-container-list li.panel-stats-container-list-item {
-		display: block;	
-	}
-}
-ul.panel-stats-container-list li.panel-stats-container-list-item:first-child { /* target the first child of the inner stat list element */
-	width: 150px;
-	display: inline-table;
-	padding-right: 0px;
-	/*background: blue;*/ /*add back colors in to see element placement */
-	color: ;
-	font-weight: 500;
-}
-ul.panel-stats-container-list li.panel-stats-container-list-item:last-child { /* target the last child of the inner stat list element */
-	color: #bbbbbb;
-	padding-left: 20px;
-	/*background: green;*/ /*add back colors in to see element placement */
-}
-@media (max-width: 600px), screen and (orientation: portrait) {
-	ul.panel-stats-container-list li.panel-stats-container-list-item:last-child {
-		padding-left: 0px;
-	}
-}
 
+/* ------------------------- */
+/* RH-PANEL LIST */
+
+dl {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+}
+dt {
+	flex-grow: 0.4;
+	flex-shrink: 1;
+	flex-basis: 0%;
+}
+dd {
+	color: #bbbbbb;
+	flex-grow: 1;
+	flex-shrink: 1;
+	flex-basis: 0%;
+	margin-left: 0px;
+}
 
 
 

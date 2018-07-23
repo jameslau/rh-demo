@@ -13,3 +13,11 @@ overpass font (https://github.com/RedHatBrand/Overpass)
 
 ### View project
 - open index.html from the rh-demo/css2v2 in your browser
+
+### Flexbox Guides
+- https://css-tricks.com/snippets/css/a-guide-to-flexbox/
+- https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout/Basic_Concepts_of_Flexbox
+
+### Notes:
+- "Within a single dl element, there should not be more than one dt element for each name."
+- r: http://html5doctor.com/the-dl-element/
